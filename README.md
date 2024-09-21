@@ -16,7 +16,6 @@ Implementation using Python code.
 
 ### Step 4:
 Serving the HTML pages.# EX01 Developing a Simple Webserver
-## Date: 19-03-2024
 
 ## AIM:
 To develop a simple webserver to serve html pages.
