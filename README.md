@@ -1,5 +1,4 @@
 # EX01 Developing a Simple Webserver
-## Date:25-09-2024
 
 ## AIM:
 To develop a simple webserver to display the configuration details of my laptop.
@@ -30,80 +29,91 @@ content='''
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specification</title>
+    <title>Laptop Configuration</title>
     <style>
-        body{
-            background-color: #ecffc4fe;
+        body {
+            font-family: Arial, sans-serif;
+            background-color:gainsboro;
+            margin: 0;
+            padding: 0;
         }
-        table {
-            width: 30%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 8px;
-            border: 1px solid #000;
-            text-align: left;
-        }
-        td:first-child::after {
-            content: ":";
-            margin-left: 5px;
-        }
-        h2{
+
+        h1 {
             text-align: center;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 70%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color:gray;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        td {
+            color: #333;
+        }
+
+        .highlight {
+            background-color: #e0f7fa;
         }
     </style>
 </head>
 <body>
-    <h2>Laptop Specifications</h2>
-<table class="specifications-table">
+
+<h1>Laptop Configuration</h1>
+
+<table>
     <tr>
-        <th>Specification</th>
+        <th>Component</th>
         <th>Details</th>
     </tr>
     <tr>
-        <td>Brand</td>
-        <td>HP</td>
-    </tr>
-    <tr>
         <td>Model</td>
-        <td>HP Pavilion</td>
+        <td>Realme Book Prime</td>
     </tr>
     <tr>
         <td>Processor</td>
-        <td>Intel Core i5 11th Gen</td>
+        <td>Intel Core i5</td>
     </tr>
     <tr>
         <td>RAM</td>
-        <td>8 GB</td>
+        <td>16 GB DDR4</td>
     </tr>
     <tr>
         <td>Storage</td>
-        <td>512 GB</td>
+        <td>512 GB SSD</td>
     </tr>
-
-    
     <tr>
         <td>Graphics</td>
-        <td>Integrated</td>
+        <td>Intel Iris XE</td>
     </tr>
     <tr>
         <td>Display</td>
-        <td>15.6 Inches</td>
+        <td>15.6" 2K</td>
     </tr>
     <tr>
-        <td>Battery Life</td>
-        <td>Up to 10 hours</td>
-    </tr>
-    <tr>
-        <td>Operating System</td>
-        <td>Windows 11</td>
-    </tr>
-    <tr>
-        <td>Special Feature</td>
-        <td>Anti Glare Screen</td>
+        <td>Battery</td>
+        <td>86 Whr</td>
     </tr>
 </table>
+
 </body>
 </html>
 '''
@@ -122,9 +132,6 @@ httpd = HTTPServer(server_address,MyServer)
 httpd.serve_forever()
 ```
 ## OUTPUT:
-![Screenshot 2024-09-19 153620](https://github.com/user-attachments/assets/8f64e4a1-2249-4e7d-89b7-70988d2ac4a8)
-
-
+![Screenshot 2024-09-19 134433](https://github.com/user-attachments/assets/3d58f060-a296-4015-a077-411f95c6787c)
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
-
