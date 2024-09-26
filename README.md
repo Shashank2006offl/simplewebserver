@@ -1,24 +1,8 @@
 # EX01 Developing a Simple Webserver
-## Date:
+## Date:19-09-2024
 
 ## AIM:
 To develop a simple webserver to display the configuration details of my laptop.
-
-## DESIGN STEPS:
-### Step 1: 
-HTML content creation.
-
-### Step 2:
-Design of webserver workflow.
-
-### Step 3:
-Implementation using Python code.
-
-### Step 4:
-Serving the HTML pages.# EX01 Developing a Simple Webserver
-
-## AIM:
-To develop a simple webserver to serve html pages.
 
 ## DESIGN STEPS:
 ### Step 1: 
@@ -41,50 +25,85 @@ Testing the webserver.
 from http.server import HTTPServer,BaseHTTPRequestHandler
 
 content='''
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title> My Web Server</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specification</title>
+    <style>
+        body{
+            background-color: #ecffc4fe;
+        }
+        table {
+            width: 30%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #000;
+            text-align: left;
+        }
+        td:first-child::after {
+            content: ":";
+            margin-left: 5px;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<h1>Top Five Revenue from Companies</h1>
-<table border=2>
-<tr>
-<th> Company Name </th>
-<th> Revenue </th>
-<th> Financial Year </th>
-</tr>
+    <h2>Laptop Specifications</h2>
+<table class="specifications-table">
+    <tr>
+        <th>Specification</th>
+        <th>Details</th>
+    </tr>
+    <tr>
+        <td>Brand</td>
+        <td>HP</td>
+    </tr>
+    <tr>
+        <td>Model</td>
+        <td>HP Pavilion</td>
+    </tr>
+    <tr>
+        <td>Processor</td>
+        <td>Intel Core i5 11th Gen</td>
+    </tr>
+    <tr>
+        <td>RAM</td>
+        <td>8 GB</td>
+    </tr>
+    <tr>
+        <td>Storage</td>
+        <td>512 GB</td>
+    </tr>
 
-<tr>
-<td> Microsoft </td>
-<td> 86$ </td>
-<td> 2014 </td>
-</tr>
-
-<tr>
-<td> Oracle </td>
-<td> 37$ </td>
-<td> 2013 </td>
-</tr>
-
-<tr>
-<td> SAP </td>
-<td> 20$ </td>
-<td> 2013 </td>
-</tr>
-
-<tr>
-<td> VMware </td>
-<td> 5.2$ </td>
-<td> 2013 </td>
-</tr>
-
-<tr>
-<td> CA Technologies </td>
-<td> 4.7$ </td>
-<td> 2013 </td>
-</tr>
-
+    
+    <tr>
+        <td>Graphics</td>
+        <td>Integrated</td>
+    </tr>
+    <tr>
+        <td>Display</td>
+        <td>15.6 Inches</td>
+    </tr>
+    <tr>
+        <td>Battery Life</td>
+        <td>Up to 10 hours</td>
+    </tr>
+    <tr>
+        <td>Operating System</td>
+        <td>Windows 11</td>
+    </tr>
+    <tr>
+        <td>Special Feature</td>
+        <td>Anti Glare Screen</td>
+    </tr>
+</table>
 </body>
 </html>
 '''
@@ -103,11 +122,7 @@ httpd = HTTPServer(server_address,MyServer)
 httpd.serve_forever()
 ```
 ## OUTPUT:
-
-![Screenshot 2024-03-19 222055](https://github.com/amirthaviswanathan05/simplewebserver/assets/149035397/e2f9470f-0685-406c-b7ea-832fddcfa755)
-
-![Screenshot 2024-03-19 222040](https://github.com/amirthaviswanathan05/simplewebserver/assets/149035397/a20a080a-dd5f-48e0-b2cb-312dc80a821e)
-
+![Screenshot 2024-09-19 153620](https://github.com/user-attachments/assets/8f64e4a1-2249-4e7d-89b7-70988d2ac4a8)
 
 
 ## RESULT:
