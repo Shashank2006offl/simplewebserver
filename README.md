@@ -27,10 +27,8 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 content = '''
 <!DOCTYPE html>
 <html>
- 
+  <title>Shashank</title>
   <body>
-      <h1>My Laptop Configuration</h1>
-      <h2>Loshini 212223220051</h2>
       <br>
       <table align="center" border="2" cellpadding="5">
         <tr>
